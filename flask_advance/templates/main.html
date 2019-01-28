@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>텀블벅 분석 메인페이지</title>
+  </head>
+  <body>
+
+     <!-- navibar 위치 -->
+     {% include 'sub/navi.html' %}
+
+     <!--메인 이미지 뿌리기-->
+     <img src='{{url_for('static', filename='multi.jpg')}}' class="img-fluid" alt="Responsive image" weight='100%'>
+
+     <!-- 메인 프로젝트 소개하기-->
+     <div class="jumbotron">
+        <h1 class="display-8">텀블벅 텍스트 마이닝을 통한 트렌드 읽기</h1>
+        <p class="lead">개발자 : 윤성희,이민정,이근,최윤정,김현목</p>
+        <hr class="my-4">
+        <p>텀블벅 사이트를 분석하여 현재 트렌드를 읽고 인기있는 프로젝트를 키워드 별로 분석해 본다.</p>
+        <hr>
+        <a class="btn btn-primary btn-lg" href="#" role="button">GO UNDER</a>
+    </div>
+
+    <!--프로젝트의 개요 및 소개 섹션-->
+    
+    <table class="table">
+        <h3 align=center>프로젝트 스케쥴 표</h3>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">일자</th>
+                <th scope="col">내용</th>
+                <th scope="col">달성률</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>2019.01.25</td>
+                <td>웹 개발 및 데이터 크롤링</td>
+                <td>40/100</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>2019.01.28</td>
+                <td>디비 모델링 및 웹 백엔드 개발</td>
+                <td>70/100</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>2019.01.29</td>
+                <td>데이터 분석 및 웹 백엔드 개발</td>
+                <td>85/100</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>2019.01.30</td>
+                <td>데이터 분석 및 웹 백엔드 개발</td>
+                <td>95/100</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>2019.01.31</td>
+                <td>데이터 시각화 및 웹 최종 마무리 => 발표</td>
+                <td>100/100</td>
+              </tr>
+          </tbody>
+      </table>
+          
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
